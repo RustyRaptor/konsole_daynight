@@ -15,6 +15,6 @@ uv sync
 ## Usage
 
 ```bash
-uv run
 uv run konsoltheme --dark_profile "Dark" --light_profile "Light"
 ```
+
