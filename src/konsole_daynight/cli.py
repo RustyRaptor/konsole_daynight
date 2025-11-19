@@ -19,7 +19,7 @@ from konsole_daynight.theme_detector import detect_theme
 )
 @click.option(
         "--light_profile",
-        "-v",
+        "-l",
         envvar="KONSOLE_DAYNIGHT_LIGHT_PROFILE",
         type=click.STRING,
         default="Light",
