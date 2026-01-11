@@ -1,0 +1,14 @@
+[Unit]
+Description=Konsole Day/Night Theme Switcher
+After=graphical-session.target
+
+[Service]
+Type=simple
+# This assumes the user has uv installed and the project is cloned in the standard location.
+# Users might need to adjust this path in their local copy.
+ExecStart=/usr/bin/env uv run --directory %h/Documents/src/konsole_daynight konsoltheme
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=graphical-session.target
